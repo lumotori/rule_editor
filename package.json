@@ -1,0 +1,40 @@
+{
+  "name": "rules-editor",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
+    "test:unit": "cypress run --component",
+    "test:unit:dev": "cypress open --component"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.12.0",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.23.1",
+    "axios": "^1.6.7",
+    "codemirror": "^6.0.1",
+    "express": "^4.18.2",
+    "jquery": "^3.6.3",
+    "lezer": "^0.13.5",
+    "lezer-generator": "^0.13.4",
+    "parser.js": "^1.0.0",
+    "vue": "^3.2.45",
+    "vue-codemirror": "^6.1.1",
+    "vue-final-modal": "^3.4.11",
+    "vue-i18n": "^9.6.5",
+    "vue-mentionable": "^0.2.4",
+    "vue-router": "^4.2.5",
+    "vue-textarea-autosize": "^1.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "cypress": "^12.0.2",
+    "start-server-and-test": "^1.15.2",
+    "vite": "^4.0.0"
+  }
+}
